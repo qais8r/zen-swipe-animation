@@ -14,7 +14,7 @@ Because this is CSS-only, it cannot add a true Dia-style page snapshot transitio
 ## Preferences
 
 - `mod.dia_swipe.enabled`: enables or disables the mod. Default: `true`.
-- `mod.dia_swipe.page_motion`: `subtle` or `off`. Default: `subtle`.
+- `mod.dia_swipe.page_motion`: `subtle` or `off`. Default: `off`.
 - `mod.dia_swipe.indicator_size`: any valid CSS length. Default: `64px`.
 
 Zen exposes the string preference as `--mod-dia_swipe-indicator_size`, which `chrome.css` uses with a `64px` fallback.

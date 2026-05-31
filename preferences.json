@@ -9,7 +9,7 @@
     "property": "mod.dia_swipe.page_motion",
     "label": "Page motion",
     "type": "dropdown",
-    "defaultValue": "subtle",
+    "defaultValue": "off",
     "placeholder": "Choose page motion",
     "options": [
       {
