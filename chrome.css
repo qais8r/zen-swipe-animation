@@ -1,0 +1,163 @@
+/* Dia-style history swipe animation for Zen Browser. */
+
+:root {
+  --dia-swipe-indicator-size: var(--mod-dia_swipe-indicator_size, 64px);
+  --dia-swipe-edge-offset: 30px;
+  --dia-swipe-bubble: rgba(34, 34, 34, 0.76);
+  --dia-swipe-bubble-commit: rgba(46, 46, 46, 0.9);
+  --dia-swipe-chevron: rgba(255, 255, 255, 0.94);
+  --dia-swipe-page-shift: 8px;
+  --dia-swipe-page-scale: 0.992;
+}
+
+#historySwipeAnimationContainer {
+  position: absolute !important;
+  inset: 0 !important;
+  inline-size: 100% !important;
+  block-size: 100% !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  z-index: 2147483647 !important;
+}
+
+#historySwipeAnimationPreviousArrow,
+#historySwipeAnimationNextArrow {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  inline-size: 100% !important;
+  block-size: 100% !important;
+  pointer-events: none !important;
+  will-change: translate, opacity !important;
+}
+
+#historySwipeAnimationPreviousArrow {
+  justify-content: flex-start !important;
+  padding-inline-start: var(--dia-swipe-edge-offset) !important;
+}
+
+#historySwipeAnimationNextArrow {
+  justify-content: flex-end !important;
+  padding-inline-end: var(--dia-swipe-edge-offset) !important;
+  transform: none !important;
+}
+
+#historySwipeAnimationPreviousArrow > .swipe-nav-icon,
+#historySwipeAnimationNextArrow > .swipe-nav-icon {
+  inline-size: var(--dia-swipe-indicator-size) !important;
+  block-size: var(--dia-swipe-indicator-size) !important;
+  margin: 0 !important;
+  border-radius: 999px !important;
+  background: var(--dia-swipe-bubble) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28),
+    0 2px 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12) !important;
+  opacity: 0.86 !important;
+  scale: 0.96 !important;
+  overflow: visible !important;
+  transition: scale 170ms cubic-bezier(0.2, 0, 0, 1),
+    opacity 170ms cubic-bezier(0.2, 0, 0, 1),
+    background-color 170ms cubic-bezier(0.2, 0, 0, 1),
+    box-shadow 170ms cubic-bezier(0.2, 0, 0, 1) !important;
+  will-change: scale, opacity !important;
+}
+
+#historySwipeAnimationNextArrow > .swipe-nav-icon {
+  transform: scaleX(-1) !important;
+}
+
+#historySwipeAnimationPreviousArrow
+  > .swipe-nav-icon:-moz-locale-dir(rtl) {
+  transform: scaleX(-1) !important;
+}
+
+#historySwipeAnimationNextArrow > .swipe-nav-icon:-moz-locale-dir(rtl) {
+  transform: none !important;
+}
+
+#historySwipeAnimationPreviousArrow > .swipe-nav-icon.will-navigate,
+#historySwipeAnimationNextArrow > .swipe-nav-icon.will-navigate {
+  opacity: 0.98 !important;
+  scale: 1.08 !important;
+  background: var(--dia-swipe-bubble-commit) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.32),
+    0 4px 12px rgba(0, 0, 0, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2) !important;
+}
+
+#historySwipeAnimationContainer .swipe-nav-icon-circle {
+  opacity: 0 !important;
+  fill: transparent !important;
+  stroke: transparent !important;
+}
+
+#historySwipeAnimationContainer .swipe-nav-icon-circle-outline {
+  opacity: 0 !important;
+  fill: transparent !important;
+  stroke: transparent !important;
+}
+
+#historySwipeAnimationContainer .swipe-nav-icon-arrow {
+  fill: var(--dia-swipe-chevron) !important;
+  stroke: var(--dia-swipe-chevron) !important;
+  stroke-width: 1.4px !important;
+  transform-box: fill-box !important;
+  transform-origin: center !important;
+  transform: scale(1.45) !important;
+  transition: fill 170ms cubic-bezier(0.2, 0, 0, 1),
+    stroke 170ms cubic-bezier(0.2, 0, 0, 1) !important;
+}
+
+@media (-moz-platform: macos) {
+  #historySwipeAnimationContainer .swipe-nav-icon-arrow {
+    transform: translateX(4px) scale(1.85) !important;
+  }
+}
+
+.browserStack > browser {
+  transform-origin: center center !important;
+  transition: transform 170ms cubic-bezier(0.2, 0, 0, 1),
+    border-radius 170ms cubic-bezier(0.2, 0, 0, 1) !important;
+  will-change: transform !important;
+}
+
+.browserStack:has(#historySwipeAnimationPreviousArrow:not([collapsed="true"]))
+  > browser {
+  border-radius: 10px !important;
+  transform: translateX(var(--dia-swipe-page-shift))
+    scale(var(--dia-swipe-page-scale)) !important;
+}
+
+.browserStack:has(#historySwipeAnimationNextArrow:not([collapsed="true"]))
+  > browser {
+  border-radius: 10px !important;
+  transform: translateX(calc(var(--dia-swipe-page-shift) * -1))
+    scale(var(--dia-swipe-page-scale)) !important;
+}
+
+@media (-moz-pref("mod.dia_swipe.page_motion", "off")) {
+  .browserStack:has(#historySwipeAnimationPreviousArrow:not([collapsed="true"]))
+    > browser,
+  .browserStack:has(#historySwipeAnimationNextArrow:not([collapsed="true"]))
+    > browser {
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+}
+
+@media (-moz-pref("mod.dia_swipe.enabled", false)) {
+  #historySwipeAnimationPreviousArrow,
+  #historySwipeAnimationNextArrow {
+    opacity: 0 !important;
+  }
+
+  .browserStack:has(#historySwipeAnimationPreviousArrow:not([collapsed="true"]))
+    > browser,
+  .browserStack:has(#historySwipeAnimationNextArrow:not([collapsed="true"]))
+    > browser {
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+}

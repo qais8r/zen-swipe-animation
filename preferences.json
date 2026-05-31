@@ -1,0 +1,32 @@
+[
+  {
+    "property": "mod.dia_swipe.enabled",
+    "label": "Enable Dia-style swipe animation",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "mod.dia_swipe.page_motion",
+    "label": "Page motion",
+    "type": "dropdown",
+    "defaultValue": "subtle",
+    "placeholder": "Choose page motion",
+    "options": [
+      {
+        "label": "Subtle",
+        "value": "subtle"
+      },
+      {
+        "label": "Off",
+        "value": "off"
+      }
+    ]
+  },
+  {
+    "property": "mod.dia_swipe.indicator_size",
+    "label": "Indicator size",
+    "type": "string",
+    "defaultValue": "64px",
+    "placeholder": "e.g. 64px"
+  }
+]

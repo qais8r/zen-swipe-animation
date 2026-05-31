@@ -1,0 +1,16 @@
+{
+  "id": "dia-style-swipe-animation",
+  "homepage": "https://github.com/qaisarsulaiman/zenSwipeAnimation",
+  "author": "Qaisar Sulaiman",
+  "name": "Dia Swipe",
+  "description": "Dia-like back and forward swipe animation.",
+  "version": "1.0.0",
+  "createdAt": "2026-05-31",
+  "updatedAt": "2026-05-31",
+  "readme": "https://raw.githubusercontent.com/qaisarsulaiman/zenSwipeAnimation/main/README.md",
+  "style": {
+    "chrome": "chrome.css"
+  },
+  "tags": ["chrome", "animation", "navigation"],
+  "fork": ["zen"]
+}
