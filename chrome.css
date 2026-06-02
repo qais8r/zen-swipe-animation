@@ -8,6 +8,10 @@
   --dia-swipe-chevron: rgba(255, 255, 255, 0.94);
   --dia-swipe-page-shift: 8px;
   --dia-swipe-page-scale: 0.992;
+  --dia-swipe-reveal-distance: calc(
+    var(--dia-swipe-indicator-size) + var(--dia-swipe-edge-offset)
+  );
+  --dia-swipe-reveal-ease: cubic-bezier(0.18, 0.9, 0.2, 1);
 }
 
 #historySwipeAnimationContainer {
@@ -51,6 +55,7 @@
   ) !important;
   pointer-events: none !important;
   transform: translateY(-50%) !important;
+  will-change: translate, opacity, filter !important;
 }
 
 #historySwipeAnimationPreviousArrow {
@@ -98,7 +103,71 @@
     filter 360ms cubic-bezier(0.2, 0, 0, 1),
     background-color 260ms cubic-bezier(0.2, 0, 0, 1),
     box-shadow 260ms cubic-bezier(0.2, 0, 0, 1) !important;
-  will-change: scale, opacity, filter !important;
+  will-change: translate, scale, opacity, filter !important;
+}
+
+#historySwipeAnimationPreviousArrow:not([collapsed="true"]):not(
+    [style*="opacity: 0;"]
+  )::before {
+  animation: dia-swipe-reveal-from-left 320ms var(--dia-swipe-reveal-ease) !important;
+}
+
+#historySwipeAnimationNextArrow:not([collapsed="true"]):not(
+    [style*="opacity: 0;"]
+  )::before {
+  animation: dia-swipe-reveal-from-right 320ms var(--dia-swipe-reveal-ease) !important;
+}
+
+#historySwipeAnimationPreviousArrow:not([collapsed="true"]):not(
+    [style*="opacity: 0;"]
+  )
+  > .swipe-nav-icon {
+  animation: dia-swipe-reveal-from-left 320ms var(--dia-swipe-reveal-ease) !important;
+}
+
+#historySwipeAnimationNextArrow:not([collapsed="true"]):not(
+    [style*="opacity: 0;"]
+  )
+  > .swipe-nav-icon {
+  animation: dia-swipe-reveal-from-right 320ms var(--dia-swipe-reveal-ease) !important;
+}
+
+@keyframes dia-swipe-reveal-from-left {
+  0% {
+    translate: calc(var(--dia-swipe-reveal-distance) * -1) 0;
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  58% {
+    opacity: 0.96;
+    filter: blur(0);
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes dia-swipe-reveal-from-right {
+  0% {
+    translate: var(--dia-swipe-reveal-distance) 0;
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  58% {
+    opacity: 0.96;
+    filter: blur(0);
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 #historySwipeAnimationNextArrow > .swipe-nav-icon {
@@ -124,9 +193,9 @@
     inset 0 0 0 1px rgba(255, 255, 255, 0.2) !important;
 }
 
-#historySwipeAnimationPreviousArrow[style*="opacity: 0"]
+#historySwipeAnimationPreviousArrow[style*="opacity: 0;"]
   > .swipe-nav-icon,
-#historySwipeAnimationNextArrow[style*="opacity: 0"] > .swipe-nav-icon {
+#historySwipeAnimationNextArrow[style*="opacity: 0;"] > .swipe-nav-icon {
   filter: blur(12px) !important;
   opacity: 0.08 !important;
   scale: 0.72 !important;
