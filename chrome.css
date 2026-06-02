@@ -81,204 +81,2295 @@
 }
 
 /* Expand Firefox's short macOS swipe range without adding a timed reveal. */
-#historySwipeAnimationPreviousArrow[style*="translate: -1"] {
-  --dia-swipe-extra: -4px;
-  --dia-swipe-glow-extra: -6px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -2"] {
-  --dia-swipe-extra: -7px;
-  --dia-swipe-glow-extra: -12px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -3"] {
-  --dia-swipe-extra: -11px;
-  --dia-swipe-glow-extra: -18px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -4"] {
-  --dia-swipe-extra: -15px;
-  --dia-swipe-glow-extra: -24px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -5"] {
-  --dia-swipe-extra: -19px;
-  --dia-swipe-glow-extra: -30px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -6"] {
-  --dia-swipe-extra: -22px;
-  --dia-swipe-glow-extra: -36px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -7"] {
-  --dia-swipe-extra: -26px;
-  --dia-swipe-glow-extra: -42px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -8"] {
-  --dia-swipe-extra: -30px;
-  --dia-swipe-glow-extra: -48px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -9"] {
-  --dia-swipe-extra: -33px;
-  --dia-swipe-glow-extra: -54px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -10"] {
-  --dia-swipe-extra: -37px;
-  --dia-swipe-glow-extra: -60px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -11"] {
-  --dia-swipe-extra: -41px;
-  --dia-swipe-glow-extra: -66px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -12"] {
-  --dia-swipe-extra: -44px;
-  --dia-swipe-glow-extra: -72px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -13"] {
-  --dia-swipe-extra: -48px;
-  --dia-swipe-glow-extra: -78px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -14"] {
-  --dia-swipe-extra: -52px;
-  --dia-swipe-glow-extra: -84px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -15"] {
-  --dia-swipe-extra: -56px;
-  --dia-swipe-glow-extra: -90px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -16"] {
-  --dia-swipe-extra: -59px;
-  --dia-swipe-glow-extra: -96px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -17"] {
-  --dia-swipe-extra: -63px;
-  --dia-swipe-glow-extra: -102px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -18"] {
-  --dia-swipe-extra: -67px;
-  --dia-swipe-glow-extra: -108px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -19"] {
-  --dia-swipe-extra: -70px;
-  --dia-swipe-glow-extra: -114px;
-}
-
-#historySwipeAnimationPreviousArrow[style*="translate: -20"] {
+/* Decimal buckets keep slow trackpad movement from looking stepped. */
+#historySwipeAnimationPreviousArrow[style*="translate: -20px"] {
   --dia-swipe-extra: -74px;
   --dia-swipe-glow-extra: -120px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 1"] {
-  --dia-swipe-extra: 4px;
-  --dia-swipe-glow-extra: 6px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.9"] {
+  --dia-swipe-extra: -77.3px;
+  --dia-swipe-glow-extra: -125.4px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 2"] {
-  --dia-swipe-extra: 7px;
-  --dia-swipe-glow-extra: 12px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.8"] {
+  --dia-swipe-extra: -77px;
+  --dia-swipe-glow-extra: -124.8px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 3"] {
-  --dia-swipe-extra: 11px;
-  --dia-swipe-glow-extra: 18px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.7"] {
+  --dia-swipe-extra: -76.6px;
+  --dia-swipe-glow-extra: -124.2px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 4"] {
-  --dia-swipe-extra: 15px;
-  --dia-swipe-glow-extra: 24px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.6"] {
+  --dia-swipe-extra: -76.2px;
+  --dia-swipe-glow-extra: -123.6px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 5"] {
-  --dia-swipe-extra: 19px;
-  --dia-swipe-glow-extra: 30px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.5"] {
+  --dia-swipe-extra: -75.9px;
+  --dia-swipe-glow-extra: -123px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 6"] {
-  --dia-swipe-extra: 22px;
-  --dia-swipe-glow-extra: 36px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.4"] {
+  --dia-swipe-extra: -75.5px;
+  --dia-swipe-glow-extra: -122.4px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 7"] {
-  --dia-swipe-extra: 26px;
-  --dia-swipe-glow-extra: 42px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.3"] {
+  --dia-swipe-extra: -75.1px;
+  --dia-swipe-glow-extra: -121.8px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 8"] {
-  --dia-swipe-extra: 30px;
-  --dia-swipe-glow-extra: 48px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.2"] {
+  --dia-swipe-extra: -74.7px;
+  --dia-swipe-glow-extra: -121.2px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 9"] {
-  --dia-swipe-extra: 33px;
-  --dia-swipe-glow-extra: 54px;
+#historySwipeAnimationPreviousArrow[style*="translate: -20.1"] {
+  --dia-swipe-extra: -74.4px;
+  --dia-swipe-glow-extra: -120.6px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 10"] {
+#historySwipeAnimationPreviousArrow[style*="translate: -20.0"] {
+  --dia-swipe-extra: -74px;
+  --dia-swipe-glow-extra: -120px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19px"] {
+  --dia-swipe-extra: -70.3px;
+  --dia-swipe-glow-extra: -114px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.9"] {
+  --dia-swipe-extra: -73.6px;
+  --dia-swipe-glow-extra: -119.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.8"] {
+  --dia-swipe-extra: -73.3px;
+  --dia-swipe-glow-extra: -118.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.7"] {
+  --dia-swipe-extra: -72.9px;
+  --dia-swipe-glow-extra: -118.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.6"] {
+  --dia-swipe-extra: -72.5px;
+  --dia-swipe-glow-extra: -117.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.5"] {
+  --dia-swipe-extra: -72.1px;
+  --dia-swipe-glow-extra: -117px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.4"] {
+  --dia-swipe-extra: -71.8px;
+  --dia-swipe-glow-extra: -116.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.3"] {
+  --dia-swipe-extra: -71.4px;
+  --dia-swipe-glow-extra: -115.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.2"] {
+  --dia-swipe-extra: -71px;
+  --dia-swipe-glow-extra: -115.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.1"] {
+  --dia-swipe-extra: -70.7px;
+  --dia-swipe-glow-extra: -114.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19.0"] {
+  --dia-swipe-extra: -70.3px;
+  --dia-swipe-glow-extra: -114px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18px"] {
+  --dia-swipe-extra: -66.6px;
+  --dia-swipe-glow-extra: -108px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.9"] {
+  --dia-swipe-extra: -69.9px;
+  --dia-swipe-glow-extra: -113.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.8"] {
+  --dia-swipe-extra: -69.6px;
+  --dia-swipe-glow-extra: -112.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.7"] {
+  --dia-swipe-extra: -69.2px;
+  --dia-swipe-glow-extra: -112.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.6"] {
+  --dia-swipe-extra: -68.8px;
+  --dia-swipe-glow-extra: -111.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.5"] {
+  --dia-swipe-extra: -68.4px;
+  --dia-swipe-glow-extra: -111px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.4"] {
+  --dia-swipe-extra: -68.1px;
+  --dia-swipe-glow-extra: -110.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.3"] {
+  --dia-swipe-extra: -67.7px;
+  --dia-swipe-glow-extra: -109.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.2"] {
+  --dia-swipe-extra: -67.3px;
+  --dia-swipe-glow-extra: -109.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.1"] {
+  --dia-swipe-extra: -67px;
+  --dia-swipe-glow-extra: -108.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18.0"] {
+  --dia-swipe-extra: -66.6px;
+  --dia-swipe-glow-extra: -108px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17px"] {
+  --dia-swipe-extra: -62.9px;
+  --dia-swipe-glow-extra: -102px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.9"] {
+  --dia-swipe-extra: -66.2px;
+  --dia-swipe-glow-extra: -107.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.8"] {
+  --dia-swipe-extra: -65.9px;
+  --dia-swipe-glow-extra: -106.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.7"] {
+  --dia-swipe-extra: -65.5px;
+  --dia-swipe-glow-extra: -106.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.6"] {
+  --dia-swipe-extra: -65.1px;
+  --dia-swipe-glow-extra: -105.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.5"] {
+  --dia-swipe-extra: -64.7px;
+  --dia-swipe-glow-extra: -105px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.4"] {
+  --dia-swipe-extra: -64.4px;
+  --dia-swipe-glow-extra: -104.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.3"] {
+  --dia-swipe-extra: -64px;
+  --dia-swipe-glow-extra: -103.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.2"] {
+  --dia-swipe-extra: -63.6px;
+  --dia-swipe-glow-extra: -103.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.1"] {
+  --dia-swipe-extra: -63.3px;
+  --dia-swipe-glow-extra: -102.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17.0"] {
+  --dia-swipe-extra: -62.9px;
+  --dia-swipe-glow-extra: -102px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16px"] {
+  --dia-swipe-extra: -59.2px;
+  --dia-swipe-glow-extra: -96px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.9"] {
+  --dia-swipe-extra: -62.5px;
+  --dia-swipe-glow-extra: -101.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.8"] {
+  --dia-swipe-extra: -62.2px;
+  --dia-swipe-glow-extra: -100.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.7"] {
+  --dia-swipe-extra: -61.8px;
+  --dia-swipe-glow-extra: -100.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.6"] {
+  --dia-swipe-extra: -61.4px;
+  --dia-swipe-glow-extra: -99.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.5"] {
+  --dia-swipe-extra: -61px;
+  --dia-swipe-glow-extra: -99px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.4"] {
+  --dia-swipe-extra: -60.7px;
+  --dia-swipe-glow-extra: -98.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.3"] {
+  --dia-swipe-extra: -60.3px;
+  --dia-swipe-glow-extra: -97.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.2"] {
+  --dia-swipe-extra: -59.9px;
+  --dia-swipe-glow-extra: -97.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.1"] {
+  --dia-swipe-extra: -59.6px;
+  --dia-swipe-glow-extra: -96.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16.0"] {
+  --dia-swipe-extra: -59.2px;
+  --dia-swipe-glow-extra: -96px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15px"] {
+  --dia-swipe-extra: -55.5px;
+  --dia-swipe-glow-extra: -90px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.9"] {
+  --dia-swipe-extra: -58.8px;
+  --dia-swipe-glow-extra: -95.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.8"] {
+  --dia-swipe-extra: -58.5px;
+  --dia-swipe-glow-extra: -94.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.7"] {
+  --dia-swipe-extra: -58.1px;
+  --dia-swipe-glow-extra: -94.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.6"] {
+  --dia-swipe-extra: -57.7px;
+  --dia-swipe-glow-extra: -93.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.5"] {
+  --dia-swipe-extra: -57.3px;
+  --dia-swipe-glow-extra: -93px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.4"] {
+  --dia-swipe-extra: -57px;
+  --dia-swipe-glow-extra: -92.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.3"] {
+  --dia-swipe-extra: -56.6px;
+  --dia-swipe-glow-extra: -91.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.2"] {
+  --dia-swipe-extra: -56.2px;
+  --dia-swipe-glow-extra: -91.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.1"] {
+  --dia-swipe-extra: -55.9px;
+  --dia-swipe-glow-extra: -90.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15.0"] {
+  --dia-swipe-extra: -55.5px;
+  --dia-swipe-glow-extra: -90px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14px"] {
+  --dia-swipe-extra: -51.8px;
+  --dia-swipe-glow-extra: -84px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.9"] {
+  --dia-swipe-extra: -55.1px;
+  --dia-swipe-glow-extra: -89.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.8"] {
+  --dia-swipe-extra: -54.8px;
+  --dia-swipe-glow-extra: -88.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.7"] {
+  --dia-swipe-extra: -54.4px;
+  --dia-swipe-glow-extra: -88.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.6"] {
+  --dia-swipe-extra: -54px;
+  --dia-swipe-glow-extra: -87.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.5"] {
+  --dia-swipe-extra: -53.6px;
+  --dia-swipe-glow-extra: -87px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.4"] {
+  --dia-swipe-extra: -53.3px;
+  --dia-swipe-glow-extra: -86.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.3"] {
+  --dia-swipe-extra: -52.9px;
+  --dia-swipe-glow-extra: -85.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.2"] {
+  --dia-swipe-extra: -52.5px;
+  --dia-swipe-glow-extra: -85.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.1"] {
+  --dia-swipe-extra: -52.2px;
+  --dia-swipe-glow-extra: -84.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14.0"] {
+  --dia-swipe-extra: -51.8px;
+  --dia-swipe-glow-extra: -84px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13px"] {
+  --dia-swipe-extra: -48.1px;
+  --dia-swipe-glow-extra: -78px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.9"] {
+  --dia-swipe-extra: -51.4px;
+  --dia-swipe-glow-extra: -83.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.8"] {
+  --dia-swipe-extra: -51.1px;
+  --dia-swipe-glow-extra: -82.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.7"] {
+  --dia-swipe-extra: -50.7px;
+  --dia-swipe-glow-extra: -82.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.6"] {
+  --dia-swipe-extra: -50.3px;
+  --dia-swipe-glow-extra: -81.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.5"] {
+  --dia-swipe-extra: -49.9px;
+  --dia-swipe-glow-extra: -81px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.4"] {
+  --dia-swipe-extra: -49.6px;
+  --dia-swipe-glow-extra: -80.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.3"] {
+  --dia-swipe-extra: -49.2px;
+  --dia-swipe-glow-extra: -79.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.2"] {
+  --dia-swipe-extra: -48.8px;
+  --dia-swipe-glow-extra: -79.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.1"] {
+  --dia-swipe-extra: -48.5px;
+  --dia-swipe-glow-extra: -78.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13.0"] {
+  --dia-swipe-extra: -48.1px;
+  --dia-swipe-glow-extra: -78px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12px"] {
+  --dia-swipe-extra: -44.4px;
+  --dia-swipe-glow-extra: -72px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.9"] {
+  --dia-swipe-extra: -47.7px;
+  --dia-swipe-glow-extra: -77.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.8"] {
+  --dia-swipe-extra: -47.4px;
+  --dia-swipe-glow-extra: -76.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.7"] {
+  --dia-swipe-extra: -47px;
+  --dia-swipe-glow-extra: -76.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.6"] {
+  --dia-swipe-extra: -46.6px;
+  --dia-swipe-glow-extra: -75.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.5"] {
+  --dia-swipe-extra: -46.2px;
+  --dia-swipe-glow-extra: -75px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.4"] {
+  --dia-swipe-extra: -45.9px;
+  --dia-swipe-glow-extra: -74.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.3"] {
+  --dia-swipe-extra: -45.5px;
+  --dia-swipe-glow-extra: -73.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.2"] {
+  --dia-swipe-extra: -45.1px;
+  --dia-swipe-glow-extra: -73.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.1"] {
+  --dia-swipe-extra: -44.8px;
+  --dia-swipe-glow-extra: -72.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12.0"] {
+  --dia-swipe-extra: -44.4px;
+  --dia-swipe-glow-extra: -72px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11px"] {
+  --dia-swipe-extra: -40.7px;
+  --dia-swipe-glow-extra: -66px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.9"] {
+  --dia-swipe-extra: -44px;
+  --dia-swipe-glow-extra: -71.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.8"] {
+  --dia-swipe-extra: -43.7px;
+  --dia-swipe-glow-extra: -70.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.7"] {
+  --dia-swipe-extra: -43.3px;
+  --dia-swipe-glow-extra: -70.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.6"] {
+  --dia-swipe-extra: -42.9px;
+  --dia-swipe-glow-extra: -69.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.5"] {
+  --dia-swipe-extra: -42.6px;
+  --dia-swipe-glow-extra: -69px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.4"] {
+  --dia-swipe-extra: -42.2px;
+  --dia-swipe-glow-extra: -68.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.3"] {
+  --dia-swipe-extra: -41.8px;
+  --dia-swipe-glow-extra: -67.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.2"] {
+  --dia-swipe-extra: -41.4px;
+  --dia-swipe-glow-extra: -67.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.1"] {
+  --dia-swipe-extra: -41.1px;
+  --dia-swipe-glow-extra: -66.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11.0"] {
+  --dia-swipe-extra: -40.7px;
+  --dia-swipe-glow-extra: -66px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10px"] {
+  --dia-swipe-extra: -37px;
+  --dia-swipe-glow-extra: -60px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.9"] {
+  --dia-swipe-extra: -40.3px;
+  --dia-swipe-glow-extra: -65.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.8"] {
+  --dia-swipe-extra: -40px;
+  --dia-swipe-glow-extra: -64.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.7"] {
+  --dia-swipe-extra: -39.6px;
+  --dia-swipe-glow-extra: -64.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.6"] {
+  --dia-swipe-extra: -39.2px;
+  --dia-swipe-glow-extra: -63.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.5"] {
+  --dia-swipe-extra: -38.8px;
+  --dia-swipe-glow-extra: -63px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.4"] {
+  --dia-swipe-extra: -38.5px;
+  --dia-swipe-glow-extra: -62.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.3"] {
+  --dia-swipe-extra: -38.1px;
+  --dia-swipe-glow-extra: -61.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.2"] {
+  --dia-swipe-extra: -37.7px;
+  --dia-swipe-glow-extra: -61.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.1"] {
+  --dia-swipe-extra: -37.4px;
+  --dia-swipe-glow-extra: -60.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10.0"] {
+  --dia-swipe-extra: -37px;
+  --dia-swipe-glow-extra: -60px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9px"] {
+  --dia-swipe-extra: -33.3px;
+  --dia-swipe-glow-extra: -54px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.9"] {
+  --dia-swipe-extra: -36.6px;
+  --dia-swipe-glow-extra: -59.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.8"] {
+  --dia-swipe-extra: -36.3px;
+  --dia-swipe-glow-extra: -58.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.7"] {
+  --dia-swipe-extra: -35.9px;
+  --dia-swipe-glow-extra: -58.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.6"] {
+  --dia-swipe-extra: -35.5px;
+  --dia-swipe-glow-extra: -57.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.5"] {
+  --dia-swipe-extra: -35.1px;
+  --dia-swipe-glow-extra: -57px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.4"] {
+  --dia-swipe-extra: -34.8px;
+  --dia-swipe-glow-extra: -56.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.3"] {
+  --dia-swipe-extra: -34.4px;
+  --dia-swipe-glow-extra: -55.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.2"] {
+  --dia-swipe-extra: -34px;
+  --dia-swipe-glow-extra: -55.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.1"] {
+  --dia-swipe-extra: -33.7px;
+  --dia-swipe-glow-extra: -54.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9.0"] {
+  --dia-swipe-extra: -33.3px;
+  --dia-swipe-glow-extra: -54px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8px"] {
+  --dia-swipe-extra: -29.6px;
+  --dia-swipe-glow-extra: -48px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.9"] {
+  --dia-swipe-extra: -32.9px;
+  --dia-swipe-glow-extra: -53.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.8"] {
+  --dia-swipe-extra: -32.6px;
+  --dia-swipe-glow-extra: -52.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.7"] {
+  --dia-swipe-extra: -32.2px;
+  --dia-swipe-glow-extra: -52.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.6"] {
+  --dia-swipe-extra: -31.8px;
+  --dia-swipe-glow-extra: -51.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.5"] {
+  --dia-swipe-extra: -31.4px;
+  --dia-swipe-glow-extra: -51px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.4"] {
+  --dia-swipe-extra: -31.1px;
+  --dia-swipe-glow-extra: -50.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.3"] {
+  --dia-swipe-extra: -30.7px;
+  --dia-swipe-glow-extra: -49.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.2"] {
+  --dia-swipe-extra: -30.3px;
+  --dia-swipe-glow-extra: -49.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.1"] {
+  --dia-swipe-extra: -30px;
+  --dia-swipe-glow-extra: -48.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8.0"] {
+  --dia-swipe-extra: -29.6px;
+  --dia-swipe-glow-extra: -48px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7px"] {
+  --dia-swipe-extra: -25.9px;
+  --dia-swipe-glow-extra: -42px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.9"] {
+  --dia-swipe-extra: -29.2px;
+  --dia-swipe-glow-extra: -47.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.8"] {
+  --dia-swipe-extra: -28.9px;
+  --dia-swipe-glow-extra: -46.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.7"] {
+  --dia-swipe-extra: -28.5px;
+  --dia-swipe-glow-extra: -46.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.6"] {
+  --dia-swipe-extra: -28.1px;
+  --dia-swipe-glow-extra: -45.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.5"] {
+  --dia-swipe-extra: -27.7px;
+  --dia-swipe-glow-extra: -45px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.4"] {
+  --dia-swipe-extra: -27.4px;
+  --dia-swipe-glow-extra: -44.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.3"] {
+  --dia-swipe-extra: -27px;
+  --dia-swipe-glow-extra: -43.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.2"] {
+  --dia-swipe-extra: -26.6px;
+  --dia-swipe-glow-extra: -43.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.1"] {
+  --dia-swipe-extra: -26.3px;
+  --dia-swipe-glow-extra: -42.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7.0"] {
+  --dia-swipe-extra: -25.9px;
+  --dia-swipe-glow-extra: -42px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6px"] {
+  --dia-swipe-extra: -22.2px;
+  --dia-swipe-glow-extra: -36px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.9"] {
+  --dia-swipe-extra: -25.5px;
+  --dia-swipe-glow-extra: -41.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.8"] {
+  --dia-swipe-extra: -25.2px;
+  --dia-swipe-glow-extra: -40.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.7"] {
+  --dia-swipe-extra: -24.8px;
+  --dia-swipe-glow-extra: -40.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.6"] {
+  --dia-swipe-extra: -24.4px;
+  --dia-swipe-glow-extra: -39.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.5"] {
+  --dia-swipe-extra: -24px;
+  --dia-swipe-glow-extra: -39px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.4"] {
+  --dia-swipe-extra: -23.7px;
+  --dia-swipe-glow-extra: -38.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.3"] {
+  --dia-swipe-extra: -23.3px;
+  --dia-swipe-glow-extra: -37.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.2"] {
+  --dia-swipe-extra: -22.9px;
+  --dia-swipe-glow-extra: -37.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.1"] {
+  --dia-swipe-extra: -22.6px;
+  --dia-swipe-glow-extra: -36.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6.0"] {
+  --dia-swipe-extra: -22.2px;
+  --dia-swipe-glow-extra: -36px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5px"] {
+  --dia-swipe-extra: -18.5px;
+  --dia-swipe-glow-extra: -30px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.9"] {
+  --dia-swipe-extra: -21.8px;
+  --dia-swipe-glow-extra: -35.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.8"] {
+  --dia-swipe-extra: -21.5px;
+  --dia-swipe-glow-extra: -34.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.7"] {
+  --dia-swipe-extra: -21.1px;
+  --dia-swipe-glow-extra: -34.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.6"] {
+  --dia-swipe-extra: -20.7px;
+  --dia-swipe-glow-extra: -33.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.5"] {
+  --dia-swipe-extra: -20.3px;
+  --dia-swipe-glow-extra: -33px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.4"] {
+  --dia-swipe-extra: -20px;
+  --dia-swipe-glow-extra: -32.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.3"] {
+  --dia-swipe-extra: -19.6px;
+  --dia-swipe-glow-extra: -31.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.2"] {
+  --dia-swipe-extra: -19.2px;
+  --dia-swipe-glow-extra: -31.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.1"] {
+  --dia-swipe-extra: -18.9px;
+  --dia-swipe-glow-extra: -30.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5.0"] {
+  --dia-swipe-extra: -18.5px;
+  --dia-swipe-glow-extra: -30px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4px"] {
+  --dia-swipe-extra: -14.8px;
+  --dia-swipe-glow-extra: -24px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.9"] {
+  --dia-swipe-extra: -18.1px;
+  --dia-swipe-glow-extra: -29.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.8"] {
+  --dia-swipe-extra: -17.8px;
+  --dia-swipe-glow-extra: -28.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.7"] {
+  --dia-swipe-extra: -17.4px;
+  --dia-swipe-glow-extra: -28.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.6"] {
+  --dia-swipe-extra: -17px;
+  --dia-swipe-glow-extra: -27.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.5"] {
+  --dia-swipe-extra: -16.7px;
+  --dia-swipe-glow-extra: -27px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.4"] {
+  --dia-swipe-extra: -16.3px;
+  --dia-swipe-glow-extra: -26.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.3"] {
+  --dia-swipe-extra: -15.9px;
+  --dia-swipe-glow-extra: -25.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.2"] {
+  --dia-swipe-extra: -15.5px;
+  --dia-swipe-glow-extra: -25.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.1"] {
+  --dia-swipe-extra: -15.2px;
+  --dia-swipe-glow-extra: -24.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4.0"] {
+  --dia-swipe-extra: -14.8px;
+  --dia-swipe-glow-extra: -24px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3px"] {
+  --dia-swipe-extra: -11.1px;
+  --dia-swipe-glow-extra: -18px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.9"] {
+  --dia-swipe-extra: -14.4px;
+  --dia-swipe-glow-extra: -23.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.8"] {
+  --dia-swipe-extra: -14.1px;
+  --dia-swipe-glow-extra: -22.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.7"] {
+  --dia-swipe-extra: -13.7px;
+  --dia-swipe-glow-extra: -22.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.6"] {
+  --dia-swipe-extra: -13.3px;
+  --dia-swipe-glow-extra: -21.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.5"] {
+  --dia-swipe-extra: -12.9px;
+  --dia-swipe-glow-extra: -21px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.4"] {
+  --dia-swipe-extra: -12.6px;
+  --dia-swipe-glow-extra: -20.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.3"] {
+  --dia-swipe-extra: -12.2px;
+  --dia-swipe-glow-extra: -19.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.2"] {
+  --dia-swipe-extra: -11.8px;
+  --dia-swipe-glow-extra: -19.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.1"] {
+  --dia-swipe-extra: -11.5px;
+  --dia-swipe-glow-extra: -18.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3.0"] {
+  --dia-swipe-extra: -11.1px;
+  --dia-swipe-glow-extra: -18px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2px"] {
+  --dia-swipe-extra: -7.4px;
+  --dia-swipe-glow-extra: -12px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.9"] {
+  --dia-swipe-extra: -10.7px;
+  --dia-swipe-glow-extra: -17.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.8"] {
+  --dia-swipe-extra: -10.4px;
+  --dia-swipe-glow-extra: -16.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.7"] {
+  --dia-swipe-extra: -10px;
+  --dia-swipe-glow-extra: -16.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.6"] {
+  --dia-swipe-extra: -9.6px;
+  --dia-swipe-glow-extra: -15.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.5"] {
+  --dia-swipe-extra: -9.2px;
+  --dia-swipe-glow-extra: -15px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.4"] {
+  --dia-swipe-extra: -8.9px;
+  --dia-swipe-glow-extra: -14.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.3"] {
+  --dia-swipe-extra: -8.5px;
+  --dia-swipe-glow-extra: -13.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.2"] {
+  --dia-swipe-extra: -8.1px;
+  --dia-swipe-glow-extra: -13.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.1"] {
+  --dia-swipe-extra: -7.8px;
+  --dia-swipe-glow-extra: -12.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2.0"] {
+  --dia-swipe-extra: -7.4px;
+  --dia-swipe-glow-extra: -12px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1px"] {
+  --dia-swipe-extra: -3.7px;
+  --dia-swipe-glow-extra: -6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.9"] {
+  --dia-swipe-extra: -7px;
+  --dia-swipe-glow-extra: -11.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.8"] {
+  --dia-swipe-extra: -6.7px;
+  --dia-swipe-glow-extra: -10.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.7"] {
+  --dia-swipe-extra: -6.3px;
+  --dia-swipe-glow-extra: -10.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.6"] {
+  --dia-swipe-extra: -5.9px;
+  --dia-swipe-glow-extra: -9.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.5"] {
+  --dia-swipe-extra: -5.6px;
+  --dia-swipe-glow-extra: -9px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.4"] {
+  --dia-swipe-extra: -5.2px;
+  --dia-swipe-glow-extra: -8.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.3"] {
+  --dia-swipe-extra: -4.8px;
+  --dia-swipe-glow-extra: -7.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.2"] {
+  --dia-swipe-extra: -4.4px;
+  --dia-swipe-glow-extra: -7.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.1"] {
+  --dia-swipe-extra: -4.1px;
+  --dia-swipe-glow-extra: -6.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -1.0"] {
+  --dia-swipe-extra: -3.7px;
+  --dia-swipe-glow-extra: -6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.9"] {
+  --dia-swipe-extra: -3.3px;
+  --dia-swipe-glow-extra: -5.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.8"] {
+  --dia-swipe-extra: -3px;
+  --dia-swipe-glow-extra: -4.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.7"] {
+  --dia-swipe-extra: -2.6px;
+  --dia-swipe-glow-extra: -4.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.6"] {
+  --dia-swipe-extra: -2.2px;
+  --dia-swipe-glow-extra: -3.6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.5"] {
+  --dia-swipe-extra: -1.8px;
+  --dia-swipe-glow-extra: -3px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.4"] {
+  --dia-swipe-extra: -1.5px;
+  --dia-swipe-glow-extra: -2.4px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.3"] {
+  --dia-swipe-extra: -1.1px;
+  --dia-swipe-glow-extra: -1.8px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.2"] {
+  --dia-swipe-extra: -0.7px;
+  --dia-swipe-glow-extra: -1.2px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -0.1"] {
+  --dia-swipe-extra: -0.4px;
+  --dia-swipe-glow-extra: -0.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20px"] {
+  --dia-swipe-extra: 74px;
+  --dia-swipe-glow-extra: 120px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.9"] {
+  --dia-swipe-extra: 77.3px;
+  --dia-swipe-glow-extra: 125.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.8"] {
+  --dia-swipe-extra: 77px;
+  --dia-swipe-glow-extra: 124.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.7"] {
+  --dia-swipe-extra: 76.6px;
+  --dia-swipe-glow-extra: 124.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.6"] {
+  --dia-swipe-extra: 76.2px;
+  --dia-swipe-glow-extra: 123.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.5"] {
+  --dia-swipe-extra: 75.9px;
+  --dia-swipe-glow-extra: 123px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.4"] {
+  --dia-swipe-extra: 75.5px;
+  --dia-swipe-glow-extra: 122.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.3"] {
+  --dia-swipe-extra: 75.1px;
+  --dia-swipe-glow-extra: 121.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.2"] {
+  --dia-swipe-extra: 74.7px;
+  --dia-swipe-glow-extra: 121.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.1"] {
+  --dia-swipe-extra: 74.4px;
+  --dia-swipe-glow-extra: 120.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20.0"] {
+  --dia-swipe-extra: 74px;
+  --dia-swipe-glow-extra: 120px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19px"] {
+  --dia-swipe-extra: 70.3px;
+  --dia-swipe-glow-extra: 114px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.9"] {
+  --dia-swipe-extra: 73.6px;
+  --dia-swipe-glow-extra: 119.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.8"] {
+  --dia-swipe-extra: 73.3px;
+  --dia-swipe-glow-extra: 118.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.7"] {
+  --dia-swipe-extra: 72.9px;
+  --dia-swipe-glow-extra: 118.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.6"] {
+  --dia-swipe-extra: 72.5px;
+  --dia-swipe-glow-extra: 117.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.5"] {
+  --dia-swipe-extra: 72.2px;
+  --dia-swipe-glow-extra: 117px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.4"] {
+  --dia-swipe-extra: 71.8px;
+  --dia-swipe-glow-extra: 116.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.3"] {
+  --dia-swipe-extra: 71.4px;
+  --dia-swipe-glow-extra: 115.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.2"] {
+  --dia-swipe-extra: 71px;
+  --dia-swipe-glow-extra: 115.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.1"] {
+  --dia-swipe-extra: 70.7px;
+  --dia-swipe-glow-extra: 114.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19.0"] {
+  --dia-swipe-extra: 70.3px;
+  --dia-swipe-glow-extra: 114px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18px"] {
+  --dia-swipe-extra: 66.6px;
+  --dia-swipe-glow-extra: 108px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.9"] {
+  --dia-swipe-extra: 69.9px;
+  --dia-swipe-glow-extra: 113.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.8"] {
+  --dia-swipe-extra: 69.6px;
+  --dia-swipe-glow-extra: 112.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.7"] {
+  --dia-swipe-extra: 69.2px;
+  --dia-swipe-glow-extra: 112.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.6"] {
+  --dia-swipe-extra: 68.8px;
+  --dia-swipe-glow-extra: 111.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.5"] {
+  --dia-swipe-extra: 68.5px;
+  --dia-swipe-glow-extra: 111px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.4"] {
+  --dia-swipe-extra: 68.1px;
+  --dia-swipe-glow-extra: 110.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.3"] {
+  --dia-swipe-extra: 67.7px;
+  --dia-swipe-glow-extra: 109.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.2"] {
+  --dia-swipe-extra: 67.3px;
+  --dia-swipe-glow-extra: 109.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.1"] {
+  --dia-swipe-extra: 67px;
+  --dia-swipe-glow-extra: 108.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18.0"] {
+  --dia-swipe-extra: 66.6px;
+  --dia-swipe-glow-extra: 108px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17px"] {
+  --dia-swipe-extra: 62.9px;
+  --dia-swipe-glow-extra: 102px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.9"] {
+  --dia-swipe-extra: 66.2px;
+  --dia-swipe-glow-extra: 107.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.8"] {
+  --dia-swipe-extra: 65.9px;
+  --dia-swipe-glow-extra: 106.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.7"] {
+  --dia-swipe-extra: 65.5px;
+  --dia-swipe-glow-extra: 106.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.6"] {
+  --dia-swipe-extra: 65.1px;
+  --dia-swipe-glow-extra: 105.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.5"] {
+  --dia-swipe-extra: 64.8px;
+  --dia-swipe-glow-extra: 105px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.4"] {
+  --dia-swipe-extra: 64.4px;
+  --dia-swipe-glow-extra: 104.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.3"] {
+  --dia-swipe-extra: 64px;
+  --dia-swipe-glow-extra: 103.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.2"] {
+  --dia-swipe-extra: 63.6px;
+  --dia-swipe-glow-extra: 103.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.1"] {
+  --dia-swipe-extra: 63.3px;
+  --dia-swipe-glow-extra: 102.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17.0"] {
+  --dia-swipe-extra: 62.9px;
+  --dia-swipe-glow-extra: 102px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16px"] {
+  --dia-swipe-extra: 59.2px;
+  --dia-swipe-glow-extra: 96px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.9"] {
+  --dia-swipe-extra: 62.5px;
+  --dia-swipe-glow-extra: 101.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.8"] {
+  --dia-swipe-extra: 62.2px;
+  --dia-swipe-glow-extra: 100.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.7"] {
+  --dia-swipe-extra: 61.8px;
+  --dia-swipe-glow-extra: 100.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.6"] {
+  --dia-swipe-extra: 61.4px;
+  --dia-swipe-glow-extra: 99.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.5"] {
+  --dia-swipe-extra: 61.1px;
+  --dia-swipe-glow-extra: 99px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.4"] {
+  --dia-swipe-extra: 60.7px;
+  --dia-swipe-glow-extra: 98.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.3"] {
+  --dia-swipe-extra: 60.3px;
+  --dia-swipe-glow-extra: 97.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.2"] {
+  --dia-swipe-extra: 59.9px;
+  --dia-swipe-glow-extra: 97.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.1"] {
+  --dia-swipe-extra: 59.6px;
+  --dia-swipe-glow-extra: 96.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16.0"] {
+  --dia-swipe-extra: 59.2px;
+  --dia-swipe-glow-extra: 96px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15px"] {
+  --dia-swipe-extra: 55.5px;
+  --dia-swipe-glow-extra: 90px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.9"] {
+  --dia-swipe-extra: 58.8px;
+  --dia-swipe-glow-extra: 95.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.8"] {
+  --dia-swipe-extra: 58.5px;
+  --dia-swipe-glow-extra: 94.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.7"] {
+  --dia-swipe-extra: 58.1px;
+  --dia-swipe-glow-extra: 94.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.6"] {
+  --dia-swipe-extra: 57.7px;
+  --dia-swipe-glow-extra: 93.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.5"] {
+  --dia-swipe-extra: 57.4px;
+  --dia-swipe-glow-extra: 93px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.4"] {
+  --dia-swipe-extra: 57px;
+  --dia-swipe-glow-extra: 92.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.3"] {
+  --dia-swipe-extra: 56.6px;
+  --dia-swipe-glow-extra: 91.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.2"] {
+  --dia-swipe-extra: 56.2px;
+  --dia-swipe-glow-extra: 91.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.1"] {
+  --dia-swipe-extra: 55.9px;
+  --dia-swipe-glow-extra: 90.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15.0"] {
+  --dia-swipe-extra: 55.5px;
+  --dia-swipe-glow-extra: 90px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14px"] {
+  --dia-swipe-extra: 51.8px;
+  --dia-swipe-glow-extra: 84px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.9"] {
+  --dia-swipe-extra: 55.1px;
+  --dia-swipe-glow-extra: 89.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.8"] {
+  --dia-swipe-extra: 54.8px;
+  --dia-swipe-glow-extra: 88.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.7"] {
+  --dia-swipe-extra: 54.4px;
+  --dia-swipe-glow-extra: 88.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.6"] {
+  --dia-swipe-extra: 54px;
+  --dia-swipe-glow-extra: 87.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.5"] {
+  --dia-swipe-extra: 53.7px;
+  --dia-swipe-glow-extra: 87px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.4"] {
+  --dia-swipe-extra: 53.3px;
+  --dia-swipe-glow-extra: 86.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.3"] {
+  --dia-swipe-extra: 52.9px;
+  --dia-swipe-glow-extra: 85.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.2"] {
+  --dia-swipe-extra: 52.5px;
+  --dia-swipe-glow-extra: 85.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.1"] {
+  --dia-swipe-extra: 52.2px;
+  --dia-swipe-glow-extra: 84.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14.0"] {
+  --dia-swipe-extra: 51.8px;
+  --dia-swipe-glow-extra: 84px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13px"] {
+  --dia-swipe-extra: 48.1px;
+  --dia-swipe-glow-extra: 78px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.9"] {
+  --dia-swipe-extra: 51.4px;
+  --dia-swipe-glow-extra: 83.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.8"] {
+  --dia-swipe-extra: 51.1px;
+  --dia-swipe-glow-extra: 82.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.7"] {
+  --dia-swipe-extra: 50.7px;
+  --dia-swipe-glow-extra: 82.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.6"] {
+  --dia-swipe-extra: 50.3px;
+  --dia-swipe-glow-extra: 81.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.5"] {
+  --dia-swipe-extra: 50px;
+  --dia-swipe-glow-extra: 81px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.4"] {
+  --dia-swipe-extra: 49.6px;
+  --dia-swipe-glow-extra: 80.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.3"] {
+  --dia-swipe-extra: 49.2px;
+  --dia-swipe-glow-extra: 79.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.2"] {
+  --dia-swipe-extra: 48.8px;
+  --dia-swipe-glow-extra: 79.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.1"] {
+  --dia-swipe-extra: 48.5px;
+  --dia-swipe-glow-extra: 78.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13.0"] {
+  --dia-swipe-extra: 48.1px;
+  --dia-swipe-glow-extra: 78px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12px"] {
+  --dia-swipe-extra: 44.4px;
+  --dia-swipe-glow-extra: 72px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.9"] {
+  --dia-swipe-extra: 47.7px;
+  --dia-swipe-glow-extra: 77.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.8"] {
+  --dia-swipe-extra: 47.4px;
+  --dia-swipe-glow-extra: 76.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.7"] {
+  --dia-swipe-extra: 47px;
+  --dia-swipe-glow-extra: 76.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.6"] {
+  --dia-swipe-extra: 46.6px;
+  --dia-swipe-glow-extra: 75.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.5"] {
+  --dia-swipe-extra: 46.3px;
+  --dia-swipe-glow-extra: 75px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.4"] {
+  --dia-swipe-extra: 45.9px;
+  --dia-swipe-glow-extra: 74.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.3"] {
+  --dia-swipe-extra: 45.5px;
+  --dia-swipe-glow-extra: 73.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.2"] {
+  --dia-swipe-extra: 45.1px;
+  --dia-swipe-glow-extra: 73.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.1"] {
+  --dia-swipe-extra: 44.8px;
+  --dia-swipe-glow-extra: 72.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12.0"] {
+  --dia-swipe-extra: 44.4px;
+  --dia-swipe-glow-extra: 72px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11px"] {
+  --dia-swipe-extra: 40.7px;
+  --dia-swipe-glow-extra: 66px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.9"] {
+  --dia-swipe-extra: 44px;
+  --dia-swipe-glow-extra: 71.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.8"] {
+  --dia-swipe-extra: 43.7px;
+  --dia-swipe-glow-extra: 70.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.7"] {
+  --dia-swipe-extra: 43.3px;
+  --dia-swipe-glow-extra: 70.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.6"] {
+  --dia-swipe-extra: 42.9px;
+  --dia-swipe-glow-extra: 69.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.5"] {
+  --dia-swipe-extra: 42.6px;
+  --dia-swipe-glow-extra: 69px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.4"] {
+  --dia-swipe-extra: 42.2px;
+  --dia-swipe-glow-extra: 68.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.3"] {
+  --dia-swipe-extra: 41.8px;
+  --dia-swipe-glow-extra: 67.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.2"] {
+  --dia-swipe-extra: 41.4px;
+  --dia-swipe-glow-extra: 67.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.1"] {
+  --dia-swipe-extra: 41.1px;
+  --dia-swipe-glow-extra: 66.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11.0"] {
+  --dia-swipe-extra: 40.7px;
+  --dia-swipe-glow-extra: 66px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 10px"] {
   --dia-swipe-extra: 37px;
   --dia-swipe-glow-extra: 60px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 11"] {
-  --dia-swipe-extra: 41px;
-  --dia-swipe-glow-extra: 66px;
+#historySwipeAnimationNextArrow[style*="translate: 10.9"] {
+  --dia-swipe-extra: 40.3px;
+  --dia-swipe-glow-extra: 65.4px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 12"] {
-  --dia-swipe-extra: 44px;
-  --dia-swipe-glow-extra: 72px;
+#historySwipeAnimationNextArrow[style*="translate: 10.8"] {
+  --dia-swipe-extra: 40px;
+  --dia-swipe-glow-extra: 64.8px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 13"] {
-  --dia-swipe-extra: 48px;
-  --dia-swipe-glow-extra: 78px;
+#historySwipeAnimationNextArrow[style*="translate: 10.7"] {
+  --dia-swipe-extra: 39.6px;
+  --dia-swipe-glow-extra: 64.2px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 14"] {
-  --dia-swipe-extra: 52px;
-  --dia-swipe-glow-extra: 84px;
+#historySwipeAnimationNextArrow[style*="translate: 10.6"] {
+  --dia-swipe-extra: 39.2px;
+  --dia-swipe-glow-extra: 63.6px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 15"] {
-  --dia-swipe-extra: 56px;
-  --dia-swipe-glow-extra: 90px;
+#historySwipeAnimationNextArrow[style*="translate: 10.5"] {
+  --dia-swipe-extra: 38.9px;
+  --dia-swipe-glow-extra: 63px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 16"] {
-  --dia-swipe-extra: 59px;
-  --dia-swipe-glow-extra: 96px;
+#historySwipeAnimationNextArrow[style*="translate: 10.4"] {
+  --dia-swipe-extra: 38.5px;
+  --dia-swipe-glow-extra: 62.4px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 17"] {
-  --dia-swipe-extra: 63px;
-  --dia-swipe-glow-extra: 102px;
+#historySwipeAnimationNextArrow[style*="translate: 10.3"] {
+  --dia-swipe-extra: 38.1px;
+  --dia-swipe-glow-extra: 61.8px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 18"] {
-  --dia-swipe-extra: 67px;
-  --dia-swipe-glow-extra: 108px;
+#historySwipeAnimationNextArrow[style*="translate: 10.2"] {
+  --dia-swipe-extra: 37.7px;
+  --dia-swipe-glow-extra: 61.2px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 19"] {
-  --dia-swipe-extra: 70px;
-  --dia-swipe-glow-extra: 114px;
+#historySwipeAnimationNextArrow[style*="translate: 10.1"] {
+  --dia-swipe-extra: 37.4px;
+  --dia-swipe-glow-extra: 60.6px;
 }
 
-#historySwipeAnimationNextArrow[style*="translate: 20"] {
-  --dia-swipe-extra: 74px;
-  --dia-swipe-glow-extra: 120px;
+#historySwipeAnimationNextArrow[style*="translate: 10.0"] {
+  --dia-swipe-extra: 37px;
+  --dia-swipe-glow-extra: 60px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9px"] {
+  --dia-swipe-extra: 33.3px;
+  --dia-swipe-glow-extra: 54px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.9"] {
+  --dia-swipe-extra: 36.6px;
+  --dia-swipe-glow-extra: 59.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.8"] {
+  --dia-swipe-extra: 36.3px;
+  --dia-swipe-glow-extra: 58.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.7"] {
+  --dia-swipe-extra: 35.9px;
+  --dia-swipe-glow-extra: 58.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.6"] {
+  --dia-swipe-extra: 35.5px;
+  --dia-swipe-glow-extra: 57.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.5"] {
+  --dia-swipe-extra: 35.2px;
+  --dia-swipe-glow-extra: 57px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.4"] {
+  --dia-swipe-extra: 34.8px;
+  --dia-swipe-glow-extra: 56.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.3"] {
+  --dia-swipe-extra: 34.4px;
+  --dia-swipe-glow-extra: 55.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.2"] {
+  --dia-swipe-extra: 34px;
+  --dia-swipe-glow-extra: 55.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.1"] {
+  --dia-swipe-extra: 33.7px;
+  --dia-swipe-glow-extra: 54.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9.0"] {
+  --dia-swipe-extra: 33.3px;
+  --dia-swipe-glow-extra: 54px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8px"] {
+  --dia-swipe-extra: 29.6px;
+  --dia-swipe-glow-extra: 48px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.9"] {
+  --dia-swipe-extra: 32.9px;
+  --dia-swipe-glow-extra: 53.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.8"] {
+  --dia-swipe-extra: 32.6px;
+  --dia-swipe-glow-extra: 52.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.7"] {
+  --dia-swipe-extra: 32.2px;
+  --dia-swipe-glow-extra: 52.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.6"] {
+  --dia-swipe-extra: 31.8px;
+  --dia-swipe-glow-extra: 51.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.5"] {
+  --dia-swipe-extra: 31.5px;
+  --dia-swipe-glow-extra: 51px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.4"] {
+  --dia-swipe-extra: 31.1px;
+  --dia-swipe-glow-extra: 50.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.3"] {
+  --dia-swipe-extra: 30.7px;
+  --dia-swipe-glow-extra: 49.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.2"] {
+  --dia-swipe-extra: 30.3px;
+  --dia-swipe-glow-extra: 49.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.1"] {
+  --dia-swipe-extra: 30px;
+  --dia-swipe-glow-extra: 48.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8.0"] {
+  --dia-swipe-extra: 29.6px;
+  --dia-swipe-glow-extra: 48px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7px"] {
+  --dia-swipe-extra: 25.9px;
+  --dia-swipe-glow-extra: 42px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.9"] {
+  --dia-swipe-extra: 29.2px;
+  --dia-swipe-glow-extra: 47.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.8"] {
+  --dia-swipe-extra: 28.9px;
+  --dia-swipe-glow-extra: 46.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.7"] {
+  --dia-swipe-extra: 28.5px;
+  --dia-swipe-glow-extra: 46.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.6"] {
+  --dia-swipe-extra: 28.1px;
+  --dia-swipe-glow-extra: 45.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.5"] {
+  --dia-swipe-extra: 27.8px;
+  --dia-swipe-glow-extra: 45px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.4"] {
+  --dia-swipe-extra: 27.4px;
+  --dia-swipe-glow-extra: 44.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.3"] {
+  --dia-swipe-extra: 27px;
+  --dia-swipe-glow-extra: 43.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.2"] {
+  --dia-swipe-extra: 26.6px;
+  --dia-swipe-glow-extra: 43.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.1"] {
+  --dia-swipe-extra: 26.3px;
+  --dia-swipe-glow-extra: 42.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7.0"] {
+  --dia-swipe-extra: 25.9px;
+  --dia-swipe-glow-extra: 42px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6px"] {
+  --dia-swipe-extra: 22.2px;
+  --dia-swipe-glow-extra: 36px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.9"] {
+  --dia-swipe-extra: 25.5px;
+  --dia-swipe-glow-extra: 41.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.8"] {
+  --dia-swipe-extra: 25.2px;
+  --dia-swipe-glow-extra: 40.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.7"] {
+  --dia-swipe-extra: 24.8px;
+  --dia-swipe-glow-extra: 40.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.6"] {
+  --dia-swipe-extra: 24.4px;
+  --dia-swipe-glow-extra: 39.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.5"] {
+  --dia-swipe-extra: 24.1px;
+  --dia-swipe-glow-extra: 39px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.4"] {
+  --dia-swipe-extra: 23.7px;
+  --dia-swipe-glow-extra: 38.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.3"] {
+  --dia-swipe-extra: 23.3px;
+  --dia-swipe-glow-extra: 37.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.2"] {
+  --dia-swipe-extra: 22.9px;
+  --dia-swipe-glow-extra: 37.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.1"] {
+  --dia-swipe-extra: 22.6px;
+  --dia-swipe-glow-extra: 36.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6.0"] {
+  --dia-swipe-extra: 22.2px;
+  --dia-swipe-glow-extra: 36px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5px"] {
+  --dia-swipe-extra: 18.5px;
+  --dia-swipe-glow-extra: 30px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.9"] {
+  --dia-swipe-extra: 21.8px;
+  --dia-swipe-glow-extra: 35.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.8"] {
+  --dia-swipe-extra: 21.5px;
+  --dia-swipe-glow-extra: 34.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.7"] {
+  --dia-swipe-extra: 21.1px;
+  --dia-swipe-glow-extra: 34.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.6"] {
+  --dia-swipe-extra: 20.7px;
+  --dia-swipe-glow-extra: 33.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.5"] {
+  --dia-swipe-extra: 20.4px;
+  --dia-swipe-glow-extra: 33px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.4"] {
+  --dia-swipe-extra: 20px;
+  --dia-swipe-glow-extra: 32.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.3"] {
+  --dia-swipe-extra: 19.6px;
+  --dia-swipe-glow-extra: 31.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.2"] {
+  --dia-swipe-extra: 19.2px;
+  --dia-swipe-glow-extra: 31.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.1"] {
+  --dia-swipe-extra: 18.9px;
+  --dia-swipe-glow-extra: 30.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5.0"] {
+  --dia-swipe-extra: 18.5px;
+  --dia-swipe-glow-extra: 30px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4px"] {
+  --dia-swipe-extra: 14.8px;
+  --dia-swipe-glow-extra: 24px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.9"] {
+  --dia-swipe-extra: 18.1px;
+  --dia-swipe-glow-extra: 29.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.8"] {
+  --dia-swipe-extra: 17.8px;
+  --dia-swipe-glow-extra: 28.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.7"] {
+  --dia-swipe-extra: 17.4px;
+  --dia-swipe-glow-extra: 28.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.6"] {
+  --dia-swipe-extra: 17px;
+  --dia-swipe-glow-extra: 27.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.5"] {
+  --dia-swipe-extra: 16.7px;
+  --dia-swipe-glow-extra: 27px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.4"] {
+  --dia-swipe-extra: 16.3px;
+  --dia-swipe-glow-extra: 26.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.3"] {
+  --dia-swipe-extra: 15.9px;
+  --dia-swipe-glow-extra: 25.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.2"] {
+  --dia-swipe-extra: 15.5px;
+  --dia-swipe-glow-extra: 25.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.1"] {
+  --dia-swipe-extra: 15.2px;
+  --dia-swipe-glow-extra: 24.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4.0"] {
+  --dia-swipe-extra: 14.8px;
+  --dia-swipe-glow-extra: 24px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3px"] {
+  --dia-swipe-extra: 11.1px;
+  --dia-swipe-glow-extra: 18px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.9"] {
+  --dia-swipe-extra: 14.4px;
+  --dia-swipe-glow-extra: 23.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.8"] {
+  --dia-swipe-extra: 14.1px;
+  --dia-swipe-glow-extra: 22.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.7"] {
+  --dia-swipe-extra: 13.7px;
+  --dia-swipe-glow-extra: 22.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.6"] {
+  --dia-swipe-extra: 13.3px;
+  --dia-swipe-glow-extra: 21.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.5"] {
+  --dia-swipe-extra: 13px;
+  --dia-swipe-glow-extra: 21px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.4"] {
+  --dia-swipe-extra: 12.6px;
+  --dia-swipe-glow-extra: 20.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.3"] {
+  --dia-swipe-extra: 12.2px;
+  --dia-swipe-glow-extra: 19.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.2"] {
+  --dia-swipe-extra: 11.8px;
+  --dia-swipe-glow-extra: 19.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.1"] {
+  --dia-swipe-extra: 11.5px;
+  --dia-swipe-glow-extra: 18.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3.0"] {
+  --dia-swipe-extra: 11.1px;
+  --dia-swipe-glow-extra: 18px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2px"] {
+  --dia-swipe-extra: 7.4px;
+  --dia-swipe-glow-extra: 12px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.9"] {
+  --dia-swipe-extra: 10.7px;
+  --dia-swipe-glow-extra: 17.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.8"] {
+  --dia-swipe-extra: 10.4px;
+  --dia-swipe-glow-extra: 16.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.7"] {
+  --dia-swipe-extra: 10px;
+  --dia-swipe-glow-extra: 16.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.6"] {
+  --dia-swipe-extra: 9.6px;
+  --dia-swipe-glow-extra: 15.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.5"] {
+  --dia-swipe-extra: 9.3px;
+  --dia-swipe-glow-extra: 15px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.4"] {
+  --dia-swipe-extra: 8.9px;
+  --dia-swipe-glow-extra: 14.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.3"] {
+  --dia-swipe-extra: 8.5px;
+  --dia-swipe-glow-extra: 13.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.2"] {
+  --dia-swipe-extra: 8.1px;
+  --dia-swipe-glow-extra: 13.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.1"] {
+  --dia-swipe-extra: 7.8px;
+  --dia-swipe-glow-extra: 12.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2.0"] {
+  --dia-swipe-extra: 7.4px;
+  --dia-swipe-glow-extra: 12px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1px"] {
+  --dia-swipe-extra: 3.7px;
+  --dia-swipe-glow-extra: 6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.9"] {
+  --dia-swipe-extra: 7px;
+  --dia-swipe-glow-extra: 11.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.8"] {
+  --dia-swipe-extra: 6.7px;
+  --dia-swipe-glow-extra: 10.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.7"] {
+  --dia-swipe-extra: 6.3px;
+  --dia-swipe-glow-extra: 10.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.6"] {
+  --dia-swipe-extra: 5.9px;
+  --dia-swipe-glow-extra: 9.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.5"] {
+  --dia-swipe-extra: 5.6px;
+  --dia-swipe-glow-extra: 9px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.4"] {
+  --dia-swipe-extra: 5.2px;
+  --dia-swipe-glow-extra: 8.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.3"] {
+  --dia-swipe-extra: 4.8px;
+  --dia-swipe-glow-extra: 7.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.2"] {
+  --dia-swipe-extra: 4.4px;
+  --dia-swipe-glow-extra: 7.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.1"] {
+  --dia-swipe-extra: 4.1px;
+  --dia-swipe-glow-extra: 6.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1.0"] {
+  --dia-swipe-extra: 3.7px;
+  --dia-swipe-glow-extra: 6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.9"] {
+  --dia-swipe-extra: 3.3px;
+  --dia-swipe-glow-extra: 5.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.8"] {
+  --dia-swipe-extra: 3px;
+  --dia-swipe-glow-extra: 4.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.7"] {
+  --dia-swipe-extra: 2.6px;
+  --dia-swipe-glow-extra: 4.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.6"] {
+  --dia-swipe-extra: 2.2px;
+  --dia-swipe-glow-extra: 3.6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.5"] {
+  --dia-swipe-extra: 1.9px;
+  --dia-swipe-glow-extra: 3px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.4"] {
+  --dia-swipe-extra: 1.5px;
+  --dia-swipe-glow-extra: 2.4px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.3"] {
+  --dia-swipe-extra: 1.1px;
+  --dia-swipe-glow-extra: 1.8px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.2"] {
+  --dia-swipe-extra: 0.7px;
+  --dia-swipe-glow-extra: 1.2px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 0.1"] {
+  --dia-swipe-extra: 0.4px;
+  --dia-swipe-glow-extra: 0.6px;
 }
 
 #historySwipeAnimationPreviousArrow > .swipe-nav-icon,
