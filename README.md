@@ -27,6 +27,8 @@ Zen exposes the string preference as `--mod-dia_swipe-indicator_size`, which `ch
 4. In `about:config`, set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 5. Restart Zen, then test two-finger back and forward swipes on pages with available history.
 
+If you tested an older build that exposed `browser.swipe.navigation-icon-start-position` or `browser.swipe.navigation-icon-end-position` as mod preferences, reset both prefs in `about:config`. This version relies on Zen/Firefox's native macOS swipe range and expands it in CSS so reversing the gesture still scrubs back through the edge.
+
 For direct `userChrome.css` testing, create these prefs manually in `about:config`. The enabled pref matters because the mod uses Zen's documented negative `-moz-pref` check for the disable branch:
 
 - `mod.dia_swipe.enabled` as boolean `true`

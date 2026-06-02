@@ -8,9 +8,6 @@
   --dia-swipe-chevron: rgba(255, 255, 255, 0.94);
   --dia-swipe-page-shift: 8px;
   --dia-swipe-page-scale: 0.992;
-  --dia-swipe-reveal-distance: calc(
-    var(--dia-swipe-indicator-size) + var(--dia-swipe-edge-offset)
-  );
   --dia-swipe-reveal-ease: cubic-bezier(0.18, 0.9, 0.2, 1);
 }
 
@@ -34,6 +31,7 @@
   inline-size: 100% !important;
   block-size: 100% !important;
   pointer-events: none !important;
+  transition: opacity 260ms cubic-bezier(0.2, 0, 0, 1) !important;
   will-change: translate, opacity !important;
 }
 
@@ -55,6 +53,11 @@
   ) !important;
   pointer-events: none !important;
   transform: translateY(-50%) !important;
+  translate: var(--dia-swipe-glow-extra, 0) 0 !important;
+  opacity: 1;
+  filter: blur(0);
+  transition: opacity 220ms var(--dia-swipe-reveal-ease),
+    filter 260ms cubic-bezier(0.2, 0, 0, 1) !important;
   will-change: translate, opacity, filter !important;
 }
 
@@ -77,6 +80,207 @@
   inset-inline-end: calc(var(--dia-swipe-edge-offset) - 46px) !important;
 }
 
+/* Expand Firefox's short macOS swipe range without adding a timed reveal. */
+#historySwipeAnimationPreviousArrow[style*="translate: -1"] {
+  --dia-swipe-extra: -4px;
+  --dia-swipe-glow-extra: -6px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -2"] {
+  --dia-swipe-extra: -7px;
+  --dia-swipe-glow-extra: -12px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -3"] {
+  --dia-swipe-extra: -11px;
+  --dia-swipe-glow-extra: -18px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -4"] {
+  --dia-swipe-extra: -15px;
+  --dia-swipe-glow-extra: -24px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -5"] {
+  --dia-swipe-extra: -19px;
+  --dia-swipe-glow-extra: -30px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -6"] {
+  --dia-swipe-extra: -22px;
+  --dia-swipe-glow-extra: -36px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -7"] {
+  --dia-swipe-extra: -26px;
+  --dia-swipe-glow-extra: -42px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -8"] {
+  --dia-swipe-extra: -30px;
+  --dia-swipe-glow-extra: -48px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -9"] {
+  --dia-swipe-extra: -33px;
+  --dia-swipe-glow-extra: -54px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -10"] {
+  --dia-swipe-extra: -37px;
+  --dia-swipe-glow-extra: -60px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -11"] {
+  --dia-swipe-extra: -41px;
+  --dia-swipe-glow-extra: -66px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -12"] {
+  --dia-swipe-extra: -44px;
+  --dia-swipe-glow-extra: -72px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -13"] {
+  --dia-swipe-extra: -48px;
+  --dia-swipe-glow-extra: -78px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -14"] {
+  --dia-swipe-extra: -52px;
+  --dia-swipe-glow-extra: -84px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -15"] {
+  --dia-swipe-extra: -56px;
+  --dia-swipe-glow-extra: -90px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -16"] {
+  --dia-swipe-extra: -59px;
+  --dia-swipe-glow-extra: -96px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -17"] {
+  --dia-swipe-extra: -63px;
+  --dia-swipe-glow-extra: -102px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -18"] {
+  --dia-swipe-extra: -67px;
+  --dia-swipe-glow-extra: -108px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -19"] {
+  --dia-swipe-extra: -70px;
+  --dia-swipe-glow-extra: -114px;
+}
+
+#historySwipeAnimationPreviousArrow[style*="translate: -20"] {
+  --dia-swipe-extra: -74px;
+  --dia-swipe-glow-extra: -120px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 1"] {
+  --dia-swipe-extra: 4px;
+  --dia-swipe-glow-extra: 6px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 2"] {
+  --dia-swipe-extra: 7px;
+  --dia-swipe-glow-extra: 12px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 3"] {
+  --dia-swipe-extra: 11px;
+  --dia-swipe-glow-extra: 18px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 4"] {
+  --dia-swipe-extra: 15px;
+  --dia-swipe-glow-extra: 24px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 5"] {
+  --dia-swipe-extra: 19px;
+  --dia-swipe-glow-extra: 30px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 6"] {
+  --dia-swipe-extra: 22px;
+  --dia-swipe-glow-extra: 36px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 7"] {
+  --dia-swipe-extra: 26px;
+  --dia-swipe-glow-extra: 42px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 8"] {
+  --dia-swipe-extra: 30px;
+  --dia-swipe-glow-extra: 48px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 9"] {
+  --dia-swipe-extra: 33px;
+  --dia-swipe-glow-extra: 54px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 10"] {
+  --dia-swipe-extra: 37px;
+  --dia-swipe-glow-extra: 60px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 11"] {
+  --dia-swipe-extra: 41px;
+  --dia-swipe-glow-extra: 66px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 12"] {
+  --dia-swipe-extra: 44px;
+  --dia-swipe-glow-extra: 72px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 13"] {
+  --dia-swipe-extra: 48px;
+  --dia-swipe-glow-extra: 78px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 14"] {
+  --dia-swipe-extra: 52px;
+  --dia-swipe-glow-extra: 84px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 15"] {
+  --dia-swipe-extra: 56px;
+  --dia-swipe-glow-extra: 90px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 16"] {
+  --dia-swipe-extra: 59px;
+  --dia-swipe-glow-extra: 96px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 17"] {
+  --dia-swipe-extra: 63px;
+  --dia-swipe-glow-extra: 102px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 18"] {
+  --dia-swipe-extra: 67px;
+  --dia-swipe-glow-extra: 108px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 19"] {
+  --dia-swipe-extra: 70px;
+  --dia-swipe-glow-extra: 114px;
+}
+
+#historySwipeAnimationNextArrow[style*="translate: 20"] {
+  --dia-swipe-extra: 74px;
+  --dia-swipe-glow-extra: 120px;
+}
+
 #historySwipeAnimationPreviousArrow > .swipe-nav-icon,
 #historySwipeAnimationNextArrow > .swipe-nav-icon {
   position: relative !important;
@@ -91,12 +295,13 @@
   background-repeat: no-repeat !important;
   background-size: 42% 52% !important;
   backdrop-filter: blur(18px) saturate(1.18) !important;
+  translate: var(--dia-swipe-extra, 0) 0 !important;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28),
     0 2px 10px rgba(0, 0, 0, 0.2),
     inset 0 0 0 1px rgba(255, 255, 255, 0.16) !important;
-  filter: blur(0) !important;
-  opacity: 0.92 !important;
-  scale: 0.98 !important;
+  filter: blur(0);
+  opacity: 0.92;
+  scale: 0.98;
   overflow: visible !important;
   transition: scale 260ms cubic-bezier(0.18, 0.9, 0.2, 1),
     opacity 260ms cubic-bezier(0.18, 0.9, 0.2, 1),
@@ -104,70 +309,6 @@
     background-color 260ms cubic-bezier(0.2, 0, 0, 1),
     box-shadow 260ms cubic-bezier(0.2, 0, 0, 1) !important;
   will-change: translate, scale, opacity, filter !important;
-}
-
-#historySwipeAnimationPreviousArrow:not([collapsed="true"]):not(
-    [style*="opacity: 0;"]
-  )::before {
-  animation: dia-swipe-reveal-from-left 320ms var(--dia-swipe-reveal-ease) !important;
-}
-
-#historySwipeAnimationNextArrow:not([collapsed="true"]):not(
-    [style*="opacity: 0;"]
-  )::before {
-  animation: dia-swipe-reveal-from-right 320ms var(--dia-swipe-reveal-ease) !important;
-}
-
-#historySwipeAnimationPreviousArrow:not([collapsed="true"]):not(
-    [style*="opacity: 0;"]
-  )
-  > .swipe-nav-icon {
-  animation: dia-swipe-reveal-from-left 320ms var(--dia-swipe-reveal-ease) !important;
-}
-
-#historySwipeAnimationNextArrow:not([collapsed="true"]):not(
-    [style*="opacity: 0;"]
-  )
-  > .swipe-nav-icon {
-  animation: dia-swipe-reveal-from-right 320ms var(--dia-swipe-reveal-ease) !important;
-}
-
-@keyframes dia-swipe-reveal-from-left {
-  0% {
-    translate: calc(var(--dia-swipe-reveal-distance) * -1) 0;
-    opacity: 0;
-    filter: blur(10px);
-  }
-
-  58% {
-    opacity: 0.96;
-    filter: blur(0);
-  }
-
-  100% {
-    translate: 0 0;
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
-@keyframes dia-swipe-reveal-from-right {
-  0% {
-    translate: var(--dia-swipe-reveal-distance) 0;
-    opacity: 0;
-    filter: blur(10px);
-  }
-
-  58% {
-    opacity: 0.96;
-    filter: blur(0);
-  }
-
-  100% {
-    translate: 0 0;
-    opacity: 1;
-    filter: blur(0);
-  }
 }
 
 #historySwipeAnimationNextArrow > .swipe-nav-icon {
@@ -193,9 +334,14 @@
     inset 0 0 0 1px rgba(255, 255, 255, 0.2) !important;
 }
 
-#historySwipeAnimationPreviousArrow[style*="opacity: 0;"]
-  > .swipe-nav-icon,
-#historySwipeAnimationNextArrow[style*="opacity: 0;"] > .swipe-nav-icon {
+#historySwipeAnimationPreviousArrow[style*="opacity: 0"]::before,
+#historySwipeAnimationNextArrow[style*="opacity: 0"]::before {
+  opacity: 0 !important;
+  filter: blur(12px) !important;
+}
+
+#historySwipeAnimationPreviousArrow[style*="opacity: 0"] > .swipe-nav-icon,
+#historySwipeAnimationNextArrow[style*="opacity: 0"] > .swipe-nav-icon {
   filter: blur(12px) !important;
   opacity: 0.08 !important;
   scale: 0.72 !important;
