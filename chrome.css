@@ -9,6 +9,7 @@
   --dia-swipe-page-shift: 8px;
   --dia-swipe-page-scale: 0.992;
   --dia-swipe-reveal-ease: cubic-bezier(0.18, 0.9, 0.2, 1);
+  --dia-swipe-exit-ease: cubic-bezier(0.2, 0.72, 0.22, 1);
 }
 
 #historySwipeAnimationContainer {
@@ -31,7 +32,7 @@
   inline-size: 100% !important;
   block-size: 100% !important;
   pointer-events: none !important;
-  transition: opacity 260ms cubic-bezier(0.2, 0, 0, 1) !important;
+  transition: opacity 440ms var(--dia-swipe-exit-ease) !important;
   will-change: translate, opacity !important;
 }
 
@@ -2427,15 +2428,42 @@
 
 #historySwipeAnimationPreviousArrow[style*="opacity: 0"]::before,
 #historySwipeAnimationNextArrow[style*="opacity: 0"]::before {
-  opacity: 0 !important;
-  filter: blur(12px) !important;
+  opacity: 0.18 !important;
+  filter: blur(11px) !important;
+  transition: opacity 440ms var(--dia-swipe-exit-ease),
+    filter 440ms var(--dia-swipe-exit-ease) !important;
 }
 
 #historySwipeAnimationPreviousArrow[style*="opacity: 0"] > .swipe-nav-icon,
 #historySwipeAnimationNextArrow[style*="opacity: 0"] > .swipe-nav-icon {
-  filter: blur(12px) !important;
-  opacity: 0.08 !important;
-  scale: 0.72 !important;
+  filter: blur(10px) !important;
+  opacity: 0.42 !important;
+  scale: 0.62 !important;
+  background-color: rgba(112, 112, 112, 0.48) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18),
+    0 1px 6px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+  transition: scale 440ms var(--dia-swipe-exit-ease),
+    opacity 440ms var(--dia-swipe-exit-ease),
+    filter 440ms var(--dia-swipe-exit-ease),
+    background-color 440ms var(--dia-swipe-exit-ease),
+    box-shadow 440ms var(--dia-swipe-exit-ease) !important;
+}
+
+#historySwipeAnimationPreviousArrow[style*="opacity: 0"]:has(
+    > .swipe-nav-icon.will-navigate
+  )::before,
+#historySwipeAnimationNextArrow[style*="opacity: 0"]:has(
+    > .swipe-nav-icon.will-navigate
+  )::before {
+  opacity: 0.2 !important;
+}
+
+#historySwipeAnimationPreviousArrow[style*="opacity: 0"]
+  > .swipe-nav-icon.will-navigate,
+#historySwipeAnimationNextArrow[style*="opacity: 0"]
+  > .swipe-nav-icon.will-navigate {
+  opacity: 0.46 !important;
 }
 
 #historySwipeAnimationContainer .swipe-nav-icon-circle {
